@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <stdarg.h>
+#include "main.h"
 
 /**
- * _printf Prints formatted output
- * This function is similar to the standard printf function, but
- * supports only a limited set of conversion specifiers: c, s, and %.
- * @param format A constant character pointer that contains the format string.
- * @return The number of characters printed (excluding the null byte).
- */
+ * _printf - Print formatted output to stdout.
+ * @format: Format string containing text and conversion specifiers.
+ * This function parses the format string and prints output
+ * based on any conversion specifiers. Supported specifiers are
+ * c, s, and %.
+ * Return: Number of characters printed.
+*/
 
 int _printf(const char *format, ...)
 {
